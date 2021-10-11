@@ -4,7 +4,13 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/stylesheets/styles.css">
 </head>
-<body>
-  <h1>{{.data}}</h1>
-</body>
+  <body>
+    <h1>会員登録フォーム</h1>
+    <form action='/post' method='post' >
+      <p>{{.err}}</p>
+      <p>会員ID :<input type="text" name="id" /></p>
+      <p>名前 :<input type="text" name="name" /></p>
+      <p><input type="submit" value="つぶやく" /></p>
+    </form>
+  </body>
 </html>
